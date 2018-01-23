@@ -12,16 +12,16 @@
       <h1>Memory Game</h1>
     </header>
     <nav>
-      <a class="subhead1" href="#directions">Instructions</a>
-      <a class="subhead2" href="#game">Game</a>
+      <a class="subhead1" href="#instructions-header">Instructions</a>
+      <a class="subhead2" href="#game-board">Game</a>
     </nav>
     <main>
-      <h2>Instructions</h2>
+      <h2 id="instructions-header">Instructions</h2>
       <h3>Test your memory in a fun game for everyone!</h3>
 
-      <div class="directions">
+      <div id="directions">
         <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-sui,
-          Pexeso or simply Pairs, is a card game in which allof the cards are laid
+          Pexeso or simply Pairs, is a card game in which all of the cards are laid
           face down on a surface and two cards are flipped face up over each turn.
           The object of the game is to turn over pairs of matching cards.
         </p>
@@ -29,14 +29,21 @@
 
       <div class="socialmedia">
         <p>Follow us on <a href="#">Twitter</a></p>
-        <p>Join our <a href="#">Facebook</a> page!</p>
+        <p>Join our <a href="#">Facebook</a> page</p>
       </div>
+      <div id="game-board" class="board clearfix">
+      </div>
+      <button>Reset Board</button>
 
-      <div class="game">
-        <img src="images/back.png" alt="Queen of Diamonds">
-        <img src="images/back.png" alt="Queen of Hearts">
-        <img src="images/back.png" alt="King of Diamonds">
-        <img src="images/back.png" alt="King of Hearts">
+      <div class="scoreboard">
+        <p>Correct:
+          <span id='score'>
+          </span>
+        </p>
+        <p>Incorrect:
+          <span id='wrong-score'>
+          </span>
+        </p>
       </div>
   </main>
 <div class="clearfix">
@@ -47,4 +54,4 @@
 </div>
 <script src="js/main.js"></script>
   </body>
-</html
+</html>
